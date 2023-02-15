@@ -12,15 +12,15 @@
 
 <body>
     
-<header><h1>Paul Mendoza</h1>
+<header id="home"><h1>Paul Mendoza</h1>
     
-    <!-- <img src="./Assets/IMG_0209.JPG" width="500" height="250" alt="a man in a field of flowers"> -->
+   
     <!-- on the upper right a home, about and contact button
     need to redirect them to certain parts on the page -->
     <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -38,17 +38,30 @@ location.reload();
 <!-- a line that runs down the page similar to a portfolio format  -->
 <main class="vertical">
 
-<section class="info">
+<section class="info" id="about-me">
     
     <h2>About Me:</h2>
 
-    <p>I am curently a student in the Berkely Extension full stack coding program.
+    <aside> <img src="./Assets/IMG_0209.JPG" width="500" height="350" 
+        alt="a man in a field of flowers">
+    </aside>
+
+
+
+    <p> Hello, my name is Paul Mendoza and 
+     I am curently a student in the Berkely Extension full stack coding program. I hope
+     to one day create things on the internet. I am a curently learning CSS, HTML, and 
+     javascript. 
     With this portfolio I plan to show my growth with front-end and back-end coding.
     Throughout the program I plan on refining and updating this portfolio to show 
-    my progression with my completed projects.  My contact info can be found on the bottom.
+    my progression with my completed projects.  My contact info can be found below if 
+    you want to reach me and my socials will be at the bottom.  
     Thank you for visiting.</p>
 </section>
+<!-- line break -->
+<br>
 
+<!-- display cards for work -->
 <section class="projects">
     <div class="card"> 
         <a href="https://github.com/pvmend/prework-study-guide">
@@ -65,6 +78,21 @@ location.reload();
          </a>
         <p> Accessibility Standards</p>
          </div>
+         
+         <div class="card" >
+            <a href=""> 
+             <img src="./Assets/coming soon.jpg "
+              alt="coming soon sign" >
+              </a>
+             <p> Coming Soon</p>
+              </div>
+              <div class="card" >
+                <a href=""> 
+                 <img src="./Assets/coming soon.jpg "
+                  alt="coming soon sign" >
+                  </a>
+                 <p> Coming Soon</p>
+                  </div>
 </section>
 
 
@@ -75,13 +103,14 @@ location.reload();
 
 
 </main>
+
+
 <aside>
     <section id="contact">
+        
         <ul class = "links" >
             <li><h3>Email:</h3><p>mendoza.v.paul@gmail.com</p></li>
-            <li><h3>Github:</h3><a href="https://github.com/pvmend">
-                Paul Mendoza Github
-              </a></li>
+            
             <li><h3>Phone:</h3><p>1-805-705-2069</p></li>
             
         </ul>
@@ -89,18 +118,17 @@ location.reload();
     </section>
     
 </aside>
-<footer>
+<footer class="logos">
+    <a href="https://github.com/pvmend">
+        <img src="./Assets/github pic transparent.png" alt="Github logo"
+        /> 
+      </a> 
+      <a href="https://www.instagram.com/the_paul_mendoza/?hl=en">
+        <img src="./Assets/insta.jpg" alt="instagram logo"
+        style="width: 65px; height: 80px;"/>
+      </a> 
 
 
-
-    <!-- <ul class = "links" >
-        <li><h3>Email:</h3><p>mendoza.v.paul@gmail.com</p></li>
-        <li><h3>Github:</h3><a href="https://github.com/pvmend">
-            Paul Mendoza Github
-          </a></li>
-        <li><h3>Phone:</h3><p>1-805-705-2069</p></li>
-        
-    </ul> -->
 </footer>
 </body>
 
