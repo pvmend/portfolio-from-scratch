@@ -1,11 +1,12 @@
-* {
+/* * {
     box-sizing: border-box;
     
-  }
+  } */
   
 h1 {
     color: aliceblue;
-    font-size: 200%;
+    font-size: 150%;
+    margin-left: 10px;
 
 }
 header {
@@ -36,7 +37,7 @@ body div img{
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 200px;
   }
   
 nav a {
@@ -51,33 +52,48 @@ header img{
     object-position: center;
 }
 main{
+    text-align: center;
     margin-top: 5%;
     /* margin-left: 5%; */
-    display:flex;
+    display:block;
     justify-content: center;
     gap: 30px;
     /* width: 100vw; */
     margin-left: 10%;
     border-left: 5px solid black;
-    height: 650px;
+    height: 1050px;
+    
+}
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 .info{
+    font-size: 22px;
 
-    border: red 1px solid;
-    width: 30vw;
-    line-height: 2.34rem;
-    height: 40vh;
+    line-height: 2.25rem;
+    
 }
 .projects{
-    width: 50vw;
+   
+    display: flex;
+    justify-content: space-between;
+
+    
 }
 .card {
     border-style: solid;
     border-width: 1px;
     padding: 10px;
+    width: 180px;
     float: left;
-    width: 25%;
+    margin: 30px;
+
   }
+.card:hover{
+    background-color: orange;
+}
 
 
 .links a {
@@ -85,9 +101,11 @@ main{
     text-decoration: none;
     
 }
-section div a:hover{
-    background-color: orange;
+aside{
+    display: block;
+    
 }
+
 
 /* .vertical {
     display: flex;
@@ -96,6 +114,7 @@ section div a:hover{
     border-left: 5px solid black;
     height: 650px;
 } */
+
 #contact ul{ 
     margin-left: 10%;
     display:flex;
@@ -108,17 +127,32 @@ footer{
     color: white;
     padding: 20px;
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.logos img{
+    margin-left: 5%;
+    width: 120px;
+    height: 90px;
+
+    background-color: orange;
 }
 
 @media screen and (max-width: 600px) {
-    footer ul{ 
+    body{
+        background-color: tan;
+    }
+    footer { 
         background-color: grey;
       
     }
-    footer ul li {
-        
-        color: #fff;
+    .card{
+        background-color: green;
     }
+   
     /* main{
         max-width: 500px;
     }
