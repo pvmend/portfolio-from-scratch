@@ -21,6 +21,20 @@ header {
     background-color: #13293d;
     color: #fff;
   }
+  .container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: navy;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
 body div img{
     object-fit: fill;
